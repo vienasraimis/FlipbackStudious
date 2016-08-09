@@ -28,6 +28,7 @@ public class MenuSystem : MonoBehaviour {
 			Cursor.visible = true;
 			Time.timeScale = 0;
 		}
+
 		else
 		{
 			menuCanvas.gameObject.SetActive(false);
