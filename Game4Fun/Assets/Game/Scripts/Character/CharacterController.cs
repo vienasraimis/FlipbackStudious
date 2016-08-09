@@ -11,7 +11,7 @@ public class CharacterController : MonoBehaviour
     void Start()
     {
         rigi = GetComponent<Rigidbody2D>();
-        rigi.freezeRotation = false;
+        rigi.freezeRotation = true;
     }
 
     void Update()
