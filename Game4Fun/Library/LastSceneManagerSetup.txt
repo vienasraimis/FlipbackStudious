@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Game/Scenes/Zimon/Traps/Traps.unity
+=======
+- path: Assets/Game/Scenes/Mathias/TestEnemyScene.unity
+>>>>>>> d46d830fa37f5b6fcf369f21c4aa13252592a425
   isLoaded: 1
   isActive: 1
