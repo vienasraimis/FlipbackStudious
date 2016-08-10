@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Game/Scenes/Zimon/TestParticleScene.unity
+- path: Assets/Game/Scenes/Mathias/TestEnemyScene.unity
   isLoaded: 1
   isActive: 1

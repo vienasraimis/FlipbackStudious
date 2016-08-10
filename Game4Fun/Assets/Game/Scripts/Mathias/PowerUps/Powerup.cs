@@ -15,7 +15,7 @@ public class Powerup : MonoBehaviour
             var status = coll.GetComponent<CharacterStatus>();
 
             status.AddHealth(Health);
-            status.SpeedBoost(Speed,SpeedTime);
+            //status.SpeedBoost(Speed,SpeedTime);
 
             Destroy(gameObject);
             

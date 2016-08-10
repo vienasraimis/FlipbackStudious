@@ -25,7 +25,7 @@ public class CharacterStatus : MonoBehaviour
 
     void Awake()
     {
-        ui.OverlapColor = ui.OverLap.color;
+        ui.Awake();
     }
 }
 
@@ -38,7 +38,7 @@ public class UIElements
     public Image OverLap;
     public Color OverlapColor;
 
-    void Awake()
+    public void Awake()
     {
         OverlapColor = OverLap.color;
     }
