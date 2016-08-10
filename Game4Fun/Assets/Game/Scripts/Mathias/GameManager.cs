@@ -5,12 +5,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public float volume = 1f;
+    public int SceneIndex = 0;
 
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
 
-        if(PlayerPrefs.GetInt("FirstRun") == 0)
+        if (PlayerPrefs.GetInt("FirstRun") == 0)
         {
             PlayerPrefs.SetInt("FirstRun", 1);
             PlayerPrefs.SetFloat("Volume", 1f);
@@ -27,6 +28,8 @@ public class GameManager : MonoBehaviour
     private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode mode)
     {
         ChangeVolume();
+
+        SceneIndex = scene.buildIndex;
     }
 
 
