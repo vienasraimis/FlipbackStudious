@@ -4,6 +4,12 @@ using System.Collections;
 public class MenuSystem : MonoBehaviour {
 
 	public Transform menuCanvas;
+
+	void Start()
+	{
+		Cursor.lockState = CursorLockMode.Locked;
+		Cursor.visible = false;
+	}
 	
 	void Update () 
 	{
@@ -18,11 +24,16 @@ public class MenuSystem : MonoBehaviour {
 		if(menuCanvas.gameObject.activeInHierarchy == false)
 		{
 			menuCanvas.gameObject.SetActive(true);
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
 			Time.timeScale = 0;
 		}
+
 		else
 		{
 			menuCanvas.gameObject.SetActive(false);
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
 			Time.timeScale = 1;
 		}
 	}
