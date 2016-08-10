@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Game/Scenes/Zimon/TestParticleScene.unity
+=======
+- path: Assets/Game/Scenes/Main.unity
+>>>>>>> e0144fe7d50337606b3734262820327a0473c64b
   isLoaded: 1
   isActive: 1
