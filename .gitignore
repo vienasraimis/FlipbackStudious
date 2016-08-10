@@ -1,17 +1,17 @@
 # =============== #
 # Unity folders #
 # =============== #
-Game4Fun/[Ll]ibrary/
-Game4Fun/[Tt]emp/
-Game4Fun/[Oo]bj/
-Game4Fun/3rdParty/
-Game4Fun/Builds/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+3rdParty/
+Builds/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
-Game4Fun/ExportedObj/
-Game4Fun/obj/
+ExportedObj/
+obj/
 *.svd
 *.userprefs
 *.csproj
