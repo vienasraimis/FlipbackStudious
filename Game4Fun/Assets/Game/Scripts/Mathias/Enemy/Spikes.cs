@@ -8,6 +8,9 @@ public class Spikes : MonoBehaviour
     public Sprite activeSpr, inactiveSpr;
 
     private bool active = true;
+    private bool ApplyDamage = false;
+    private bool damageApplied = false;
+
     private SpriteRenderer rend;
 
     private float time;
@@ -29,11 +32,20 @@ public class Spikes : MonoBehaviour
 
     void FixedUpdate()
     {
+
+        if (active && ApplyDamage && !damageApplied)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterStatus>().AddHealth(-10f);
+
+            damageApplied = true;
+        }
+
         time -= Time.fixedDeltaTime;
 
         if(time <= 0f)
         {
             active = !active;
+            damageApplied = false;
 
             time = triggerTime;
 
@@ -46,7 +58,15 @@ public class Spikes : MonoBehaviour
     {
         if(coll.tag == "Player")
         {
-            if(active)coll.GetComponent<CharacterStatus>().AddHealth(-10f);
+            ApplyDamage = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D coll)
+    {
+        if (coll.tag == "Player")
+        {
+            ApplyDamage = false;
         }
     }
 }

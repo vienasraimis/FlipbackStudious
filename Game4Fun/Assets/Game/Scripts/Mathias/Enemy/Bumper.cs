@@ -7,7 +7,8 @@ public class Bumper : MonoBehaviour
     {
         if(coll.transform.tag == "Player")
         {
-
+            var status = coll.transform.GetComponent<CharacterStatus>();
+            //Vector3.l
         }
     }
 }
