@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(Rigidbody2D))]
 public class EnemyMovement : MonoBehaviour
 {
 
     public float Speed = 10f;
     public Transform[] WayPoints;
 
-    private Rigidbody2D rigi;
     private int wp = 0;
 
     void Start()
@@ -19,8 +17,6 @@ public class EnemyMovement : MonoBehaviour
             Debug.LogError("There were not enough waypoints");
             return;
         }
-
-        rigi = GetComponent<Rigidbody2D>();
 
         transform.position = WayPoints[0].position;
 
