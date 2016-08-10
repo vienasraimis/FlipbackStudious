@@ -42,7 +42,7 @@ GameObject:
   - 50: {fileID: 50000010472210174}
   - 114: {fileID: 114000010334083748}
   - 114: {fileID: 114000011818155342}
-  - 61: {fileID: 61000013905908220}
+  - 61: {fileID: 61000012744999880}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -58,7 +58,7 @@ Transform:
   m_GameObject: {fileID: 1000013398272876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 4000013866731586}
@@ -71,7 +71,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012273690446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -128,7 +128,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &61000013905908220
+--- !u!61 &61000012744999880
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -139,9 +139,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0.10817349, y: 0.15624933}
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 3.4532785, y: 3.11674}
+  m_Size: {x: 1, y: 1}
 --- !u!81 &81000011273585306
 AudioListener:
   m_ObjectHideFlags: 1
