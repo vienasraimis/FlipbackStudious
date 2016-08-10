@@ -11,6 +11,11 @@ public class Spikes : MonoBehaviour
     private bool ApplyDamage = false;
     private bool damageApplied = false;
 
+    //Audio - Add by Zimon
+    public AudioClip spikesActiveSound;
+    AudioSource audio;
+    //----------
+
     private SpriteRenderer rend;
 
     public float time;
@@ -19,10 +24,15 @@ public class Spikes : MonoBehaviour
     {
         time = triggerTime;
         rend = GetComponent<SpriteRenderer>();
+
+        //Audio - Zimon
+        audio = GetComponent<AudioSource>();
+        //---------
         
         if(active)
         {
             rend.sprite = activeSpr;
+            audio.PlayOneShot(spikesActiveSound); //Play sound when spike is active - Zimon //BUG: Only plays once when it should play the sound every time Spikes are active.
         }
         else
         {
