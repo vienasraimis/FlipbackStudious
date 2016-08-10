@@ -57,7 +57,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if(coll.tag == "Player")
         {
-            Destroy(coll.gameObject);
+            //GameOver
         }
     }
 }
