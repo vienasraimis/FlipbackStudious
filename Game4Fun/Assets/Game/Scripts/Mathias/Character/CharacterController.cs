@@ -9,6 +9,8 @@ public class CharacterController : MonoBehaviour
     private Rigidbody2D rigi;
     private CharacterStatus status;
 
+    private bool doMove = true;
+
     void Start()
     {
         rigi = GetComponent<Rigidbody2D>();
@@ -24,6 +26,16 @@ public class CharacterController : MonoBehaviour
         var prev = transform.position;
         rigi.MovePosition(transform.position + movement);
 
-        status.Step(movement / (Speed));
+        if (doMove) status.Step(movement / (Speed));
+    }
+
+    void OnCollisionEnter2D(Collision2D coll)
+    {
+        doMove = false;
+    }
+
+    void OnCollisionExit2D(Collision2D coll)
+    {
+        doMove = true;
     }
 }
