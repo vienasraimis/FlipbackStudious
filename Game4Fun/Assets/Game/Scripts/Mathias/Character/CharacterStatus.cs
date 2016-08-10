@@ -20,7 +20,7 @@ public class CharacterStatus : MonoBehaviour
 
     public void AddHealth(float health)
     {
-        ui.stepbar.value += health;
+        ui.stepbar.value += health/10;
     }
 
     void Awake()
