@@ -1,7 +1,43 @@
-/Game4Fun/Assets/Game/Scenes/Main.unity
-/Game4Fun/Library/CurrentLayout.dwlt
-/Game4Fun/Library/LastSceneManagerSetup.txt
-/Game4Fun/Library/ScriptAssemblies/Assembly-CSharp.dll
-/Game4Fun/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
-/Game4Fun/Library/assetDatabase3
-/Game4Fun/Library/expandedItems
+Game4Fun/Assets/Game/Scenes/Main.unity
+Game4Fun/Library/CurrentLayout.dwlt
+Game4Fun/Library/LastSceneManagerSetup.txt
+Game4Fun/Library/ScriptAssemblies/Assembly-CSharp.dll
+Game4Fun/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
+Game4Fun/Library/assetDatabase3
+Game4Fun/Library/expandedItems
+
+# =============== #
+# Unity generated #
+# =============== #
+Game4Fun/Temp/
+Game4Fun/Obj/
+Game4Fun/UnityGenerated/
+Game4Fun/Library/
+Game4Fun/Assets/AssetStoreTools*
+Game4Fun/Builds/
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+Game4Fun/ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
