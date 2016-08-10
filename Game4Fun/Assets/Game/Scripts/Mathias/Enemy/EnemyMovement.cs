@@ -29,10 +29,9 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        
-
+        RotateToWaypoint();
         Vector3 dir = WayPoints[wp].position - transform.position;
-        RotateToWaypoint(dir);
+
         transform.Translate(dir.normalized * Time.deltaTime * Speed, Space.World);
 
 
@@ -44,13 +43,14 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-    private void RotateToWaypoint(Vector3 dir)
+    private void RotateToWaypoint()
     {
-        Quaternion rotQ = Quaternion.LookRotation(dir);
-        Vector3 rotV = rotQ.eulerAngles;
-        var direction = rotV.x;
+        var pos = WayPoints[wp].position;
 
-        //transform.rotation = Quaternion.Euler(0,0,rotation);
+        var dir = pos - transform.position;
+        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0f, 0f, angle - 90f);
     }
 
     void OnTriggerEnter2D(Collider2D coll)
@@ -59,5 +59,10 @@ public class EnemyMovement : MonoBehaviour
         {
             //GameOver
         }
+    }
+
+    private void RoundRotation(Quaternion rot)
+    {
+
     }
 }
