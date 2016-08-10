@@ -24,6 +24,6 @@ public class CharacterController : MonoBehaviour
         var prev = transform.position;
         rigi.MovePosition(transform.position + movement);
 
-        //if(prev == transform.position) status.Step(movement / (Speed));
+        status.Step(movement / (Speed));
     }
 }
