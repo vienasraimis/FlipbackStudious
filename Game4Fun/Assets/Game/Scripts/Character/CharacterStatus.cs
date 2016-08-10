@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using System.Collections;
 
-[]
+[System.Serializable]
 public class CharacterStatus : MonoBehaviour
 {
     public UIElements ui;
