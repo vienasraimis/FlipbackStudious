@@ -23,20 +23,20 @@ public class EnemyMovement : MonoBehaviour
         rigi = GetComponent<Rigidbody2D>();
 
         transform.position = WayPoints[0].position;
-        transform.rotation = WayPoints[0].rotation;
 
         wp = 1;
     }
 
     void Update()
     {
-        RotateToWaypoint();
+        
 
         Vector3 dir = WayPoints[wp].position - transform.position;
+        RotateToWaypoint(dir);
         transform.Translate(dir.normalized * Time.deltaTime * Speed, Space.World);
 
 
-        if(Vector3.Distance(transform.position,WayPoints[wp].position) <= 0.2f)
+        if(Vector3.Distance(transform.position,WayPoints[wp].position) <= 0.02f)
         {
             wp++;
             if (wp == WayPoints.Length) wp = 0;
@@ -44,8 +44,20 @@ public class EnemyMovement : MonoBehaviour
 
     }
 
-    private void RotateToWaypoint()
+    private void RotateToWaypoint(Vector3 dir)
     {
+        Quaternion rotQ = Quaternion.LookRotation(dir);
+        Vector3 rotV = rotQ.eulerAngles;
+        var direction = rotV.x;
 
+        //transform.rotation = Quaternion.Euler(0,0,rotation);
+    }
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if(coll.tag == "Player")
+        {
+            Destroy(coll.gameObject);
+        }
     }
 }
