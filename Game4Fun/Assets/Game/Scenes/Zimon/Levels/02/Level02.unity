@@ -568,6 +568,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4000011409444596, guid: 12a725b09f941a5439f0deac284ed0b7,
     type: 2}
   m_PrefabInternal: {fileID: 217484694}
+--- !u!114 &221093445 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012560659644, guid: 122caa9bd8299e64084f2bf061ce5ba1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117382028}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &232822732
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,6 +2570,12 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &541615510 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012591881206, guid: 122caa9bd8299e64084f2bf061ce5ba1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117382028}
+  m_Script: {fileID: -113659843, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &604668663
 GameObject:
   m_ObjectHideFlags: 0
@@ -5515,6 +5527,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011818155342, guid: 858ccb91fe4f3496488e2d8fe294abad,
+        type: 2}
+      propertyPath: ui.stepbar
+      value: 
+      objectReference: {fileID: 541615510}
+    - target: {fileID: 114000011818155342, guid: 858ccb91fe4f3496488e2d8fe294abad,
+        type: 2}
+      propertyPath: ui.OverLap
+      value: 
+      objectReference: {fileID: 221093445}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 858ccb91fe4f3496488e2d8fe294abad, type: 2}
   m_IsPrefabParent: 0
