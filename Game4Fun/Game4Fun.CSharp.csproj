@@ -72,6 +72,7 @@
     <Compile Include="Assets\Game\Scripts\Mathias\Character\CharacterController.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\Character\CharacterStatus.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\EnemyMovement.cs" />
+    <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\PowerUps\Powerup.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
