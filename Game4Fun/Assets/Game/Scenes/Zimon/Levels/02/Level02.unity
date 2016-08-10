@@ -3153,6 +3153,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1132664016}
+  - 61: {fileID: 1132664018}
+  - 114: {fileID: 1132664017}
   m_Layer: 0
   m_Name: EndPortal
   m_TagString: Untagged
@@ -3174,6 +3176,32 @@ Transform:
   - {fileID: 232822733}
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!114 &1132664017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132664015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bd21cbf8b644a7fbb49de34e0edcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Level03
+--- !u!61 &1132664018
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132664015}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0.03885031, y: 0.0077729262}
+  serializedVersion: 2
+  m_Size: {x: 0.6734614, y: 0.45576498}
 --- !u!1 &1171129909
 GameObject:
   m_ObjectHideFlags: 0
