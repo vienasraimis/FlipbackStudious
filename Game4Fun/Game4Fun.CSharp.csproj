@@ -71,6 +71,7 @@
   <ItemGroup>
     <Compile Include="Assets\Game\Scripts\Mathias\Character\CharacterController.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\Character\CharacterStatus.cs" />
+    <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Bumper.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Spikes.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
