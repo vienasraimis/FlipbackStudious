@@ -1,12 +1,12 @@
 fileFormatVersion: 2
 guid: b344dfdbbb4c17d41a854b4237328936
-timeCreated: 1470833508
+timeCreated: 1470833868
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
   defaultReferences:
-  - activeSpr: {fileID: 21300000, guid: e715500d6e6af4518a9018ff2198d373, type: 3}
-  - inactiveSpr: {fileID: 21300000, guid: aecb347f14f717541a05471f78df37a4, type: 3}
+  - activeSpr: {fileID: 21300000, guid: 3964e6d19b1ff4c049cc8f55d206e768, type: 3}
+  - inactiveSpr: {fileID: 21300000, guid: 6d6cab9c95c714cd3bb1703fa91ae73c, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -46,7 +46,7 @@ public class Spikes : MonoBehaviour
     {
         if(coll.tag == "Player")
         {
-            coll.GetComponent<CharacterStatus>().AddHealth(-10f);
+            if(active)coll.GetComponent<CharacterStatus>().AddHealth(-10f);
         }
     }
 }
