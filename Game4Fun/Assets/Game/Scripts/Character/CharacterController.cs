@@ -20,8 +20,10 @@ public class CharacterController : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.fixedDeltaTime * Speed;
-        status.Step(movement/(Speed*10));
 
+        var prev = transform.position;
         rigi.MovePosition(transform.position + movement);
+
+        //if(prev == transform.position) status.Step(movement / (Speed));
     }
 }
