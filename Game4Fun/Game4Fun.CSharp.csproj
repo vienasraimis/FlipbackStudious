@@ -76,6 +76,7 @@
     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Spikes.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\PowerUps\Powerup.cs" />
+    <Compile Include="Assets\Game\Scripts\Zimon\MenuSystem.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>
