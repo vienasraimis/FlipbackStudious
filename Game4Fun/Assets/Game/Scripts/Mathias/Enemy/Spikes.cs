@@ -7,13 +7,13 @@ public class Spikes : MonoBehaviour
 
     public Sprite activeSpr, inactiveSpr;
 
-    private bool active = true;
+    public bool active = true;
     private bool ApplyDamage = false;
     private bool damageApplied = false;
 
     private SpriteRenderer rend;
 
-    private float time;
+    public float time;
 
     void Start()
     {
@@ -33,14 +33,14 @@ public class Spikes : MonoBehaviour
     void FixedUpdate()
     {
 
+        time -= Time.fixedDeltaTime;
+
         if (active && ApplyDamage && !damageApplied)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterStatus>().AddHealth(-10f);
 
             damageApplied = true;
         }
-
-        time -= Time.fixedDeltaTime;
 
         if(time <= 0f)
         {
