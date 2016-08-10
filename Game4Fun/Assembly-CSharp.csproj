@@ -51,6 +51,7 @@
      <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Spikes.cs" />
      <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
      <Compile Include="Assets\Game\Scripts\Mathias\PowerUps\Powerup.cs" />
+     <Compile Include="Assets\Game\Scripts\Zimon\MenuSystem.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
