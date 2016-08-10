@@ -1,18 +1,10 @@
-Game4Fun/Assets/Game/Scenes/Main.unity
-Game4Fun/Library/CurrentLayout.dwlt
-Game4Fun/Library/LastSceneManagerSetup.txt
-Game4Fun/Library/ScriptAssemblies/Assembly-CSharp.dll
-Game4Fun/Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
-Game4Fun/Library/assetDatabase3
-Game4Fun/Library/expandedItems
-
 # =============== #
 # Unity generated #
 # =============== #
 Game4Fun/Temp/
 Game4Fun/Obj/
 Game4Fun/UnityGenerated/
-Game4Fun/Library/
+Game4Fun/Library/*
 Game4Fun/Assets/AssetStoreTools*
 Game4Fun/Builds/
 
