@@ -1,17 +1,17 @@
 # =============== #
-# Unity generated #
+# Unity folders #
 # =============== #
-Game4Fun/Temp/
-Game4Fun/Obj/
-Game4Fun/UnityGenerated/
-Game4Fun/Library/*
-Game4Fun/Assets/AssetStoreTools*
+Game4Fun/[Ll]ibrary/
+Game4Fun/[Tt]emp/
+Game4Fun/[Oo]bj/
+Game4Fun/3rdParty/
 Game4Fun/Builds/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
 Game4Fun/ExportedObj/
+Game4Fun/obj/
 *.svd
 *.userprefs
 *.csproj
@@ -22,6 +22,12 @@ Game4Fun/ExportedObj/
 *.unityproj
 *.booproj
 
+# ===================================== #
+# Unity generated #
+# ===================================== #
+*.pidb.meta
+sysinfo.txt
+
 # ============ #
 # OS generated #
 # ============ #
@@ -30,6 +36,5 @@ Game4Fun/ExportedObj/
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
 ehthumbs.db
 Thumbs.db
