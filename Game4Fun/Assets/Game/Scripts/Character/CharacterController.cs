@@ -1,23 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D),typeof(CharacterStatus))]
 public class CharacterController : MonoBehaviour
 {
     public float Speed = 10f;
 
     private Rigidbody2D rigi;
+    private CharacterStatus status;
 
     void Start()
     {
         rigi = GetComponent<Rigidbody2D>();
+        status = GetComponent<CharacterStatus>();
+
         rigi.freezeRotation = true;
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        Vector3 movment = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.deltaTime * Speed;
+        Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.fixedDeltaTime * Speed;
+        status.Step(movement/(Speed*10));
 
-        rigi.MovePosition(transform.position + movment);
+        rigi.MovePosition(transform.position + movement);
     }
 }

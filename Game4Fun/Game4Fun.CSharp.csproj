@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Game\Scripts\Character\CharacterController.cs" />
+    <Compile Include="Assets\Game\Scripts\Character\CharacterStatus.cs" />
     <Compile Include="Assets\Game\Scripts\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Game\Scripts\Main Menu\MenuSystem.cs" />
   </ItemGroup>
