@@ -16,7 +16,7 @@
     <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
-    <UnityVersion>5.4.0f3</UnityVersion>
+    <UnityVersion>5.4.0p1</UnityVersion>
     <RootNamespace></RootNamespace>
     <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
   </PropertyGroup>
@@ -70,8 +70,10 @@
     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Spikes.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\PowerUps\Powerup.cs" />
-    <Compile Include="Assets\Game\Scripts\Zimon\MenuSystem.cs" />
-    <Compile Include="Assets\Game\Scripts\Zimon\PortalSwitchScene.cs" />
+    <Compile Include="Assets\Game\Scripts\Raimundas\CharacterRotation.cs" />
+    <Compile Include="Assets\Game\Scripts\Zimon\Level\PortalSwitchScene.cs" />
+    <Compile Include="Assets\Game\Scripts\Zimon\Level\TimeLeft.cs" />
+    <Compile Include="Assets\Game\Scripts\Zimon\Menu\MenuSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\test.txt" />
