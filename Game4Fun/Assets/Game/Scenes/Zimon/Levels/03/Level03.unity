@@ -1296,6 +1296,11 @@ Prefab:
       propertyPath: ui.OverLap
       value: 
       objectReference: {fileID: 1038510842}
+    - target: {fileID: 82000011547647094, guid: 858ccb91fe4f3496488e2d8fe294abad,
+        type: 2}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 858ccb91fe4f3496488e2d8fe294abad, type: 2}
   m_IsPrefabParent: 0
