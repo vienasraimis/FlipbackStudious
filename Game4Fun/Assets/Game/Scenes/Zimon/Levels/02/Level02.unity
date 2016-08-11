@@ -440,7 +440,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game4Fun
+  m_Text: Cyclonergy
 --- !u!222 &64040583
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3437,7 +3437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Made by COMPANYNAME 2016
+  m_Text: Made by Flipback Studios 2016
 --- !u!222 &1229031016
 CanvasRenderer:
   m_ObjectHideFlags: 0
