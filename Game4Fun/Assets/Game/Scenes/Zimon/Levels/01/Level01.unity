@@ -2982,7 +2982,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: -0.00000020861626, y: 0.03264761}
   serializedVersion: 2
-  m_Size: {x: 1.1305892, y: 0.5429373}
+  m_Size: {x: 2, y: 0.5429373}
 --- !u!1 &1469562902
 GameObject:
   m_ObjectHideFlags: 0
@@ -5114,6 +5114,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2080421539}
   - 114: {fileID: 2080421538}
+  - 114: {fileID: 2080421540}
   m_Layer: 0
   m_Name: _GAMEMANAGER
   m_TagString: Untagged
@@ -5146,6 +5147,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &2080421540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2080421537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6209b3488944e4d6aa6366c4d35aa5fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Level01
+  time: 3
 --- !u!1001 &2111210445
 Prefab:
   m_ObjectHideFlags: 0
