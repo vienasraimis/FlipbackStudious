@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Shop : MonoBehaviour {
+public class Shop : MonoBehaviour
+{
+    public GameObject[] Items;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public void Buy()
+    {
+
+    }
+
+    public void Sell()
+    {
+
+    }
 }
