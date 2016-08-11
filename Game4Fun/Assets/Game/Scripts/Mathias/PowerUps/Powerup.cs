@@ -14,6 +14,7 @@ public class Powerup : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
+
         if(coll.tag == "Player")
         {
             var status = coll.GetComponent<CharacterStatus>();
