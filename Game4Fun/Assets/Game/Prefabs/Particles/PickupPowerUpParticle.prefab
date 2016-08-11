@@ -130,7 +130,7 @@ ParticleSystem:
         m_RotationOrder: 4
       minMaxState: 0
     startSpeed:
-      scalar: 2.5
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -651,7 +651,7 @@ ParticleSystem:
       minMaxState: 0
     separateAxes: 0
   RotationModule:
-    enabled: 1
+    enabled: 0
     x:
       scalar: 0.17453292
       maxCurve:
