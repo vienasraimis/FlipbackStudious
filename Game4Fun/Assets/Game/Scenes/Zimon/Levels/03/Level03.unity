@@ -421,7 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: Level03
-  time: 2.2
+  time: 2.4
 --- !u!4 &282107726 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011409444596, guid: 12a725b09f941a5439f0deac284ed0b7,
@@ -841,7 +841,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: -0.00000020861626, y: 0.03264761}
   serializedVersion: 2
-  m_Size: {x: 1.1305892, y: 0.5429373}
+  m_Size: {x: 2, y: 0.5429373}
 --- !u!4 &754890451
 Transform:
   m_ObjectHideFlags: 0
