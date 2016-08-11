@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Game/Scenes/Zimon/Levels/02/Level02.unity
+- path: Assets/Game/Scenes/Zimon/Levels/03/Level03.unity
   isLoaded: 1
   isActive: 1
