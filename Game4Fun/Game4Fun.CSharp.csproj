@@ -71,6 +71,7 @@
     <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\PowerUps\Powerup.cs" />
     <Compile Include="Assets\Game\Scripts\Zimon\MenuSystem.cs" />
+    <Compile Include="Assets\Game\Scripts\Zimon\PortalSwitchScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\test.txt" />
