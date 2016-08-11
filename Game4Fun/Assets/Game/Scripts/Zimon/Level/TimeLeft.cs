@@ -15,7 +15,7 @@ public class TimeLeft : MonoBehaviour {
 
 		if(time <= 0f)
 		{
-			SceneManager.LoadScene(levelToLoad);
+			//SceneManager.LoadScene(levelToLoad);
 		}
 	}
 }
