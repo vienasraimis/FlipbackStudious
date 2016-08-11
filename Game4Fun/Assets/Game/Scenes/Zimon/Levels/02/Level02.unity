@@ -2791,6 +2791,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 675844858}
   - 114: {fileID: 675844857}
+  - 114: {fileID: 675844859}
   m_Layer: 0
   m_Name: _GAMEMANAGER
   m_TagString: Untagged
@@ -2823,6 +2824,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &675844859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 675844856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6209b3488944e4d6aa6366c4d35aa5fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Level02
+  time: 3.5
 --- !u!1 &769474381
 GameObject:
   m_ObjectHideFlags: 0

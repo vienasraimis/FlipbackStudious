@@ -52,8 +52,9 @@
      <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Spikes.cs" />
      <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
      <Compile Include="Assets\Game\Scripts\Mathias\PowerUps\Powerup.cs" />
-     <Compile Include="Assets\Game\Scripts\Zimon\MenuSystem.cs" />
-     <Compile Include="Assets\Game\Scripts\Zimon\PortalSwitchScene.cs" />
+     <Compile Include="Assets\Game\Scripts\Zimon\Level\PortalSwitchScene.cs" />
+     <Compile Include="Assets\Game\Scripts\Zimon\Level\TimeLeft.cs" />
+     <Compile Include="Assets\Game\Scripts\Zimon\Menu\MenuSystem.cs" />
      <None Include="Assets\test.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
