@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Game/Scenes/Zimon/TestParticleScene/TestParticleScene.unity
+- path: Assets/Game/Scenes/Zimon/Traps/Traps.unity
   isLoaded: 1
   isActive: 1
