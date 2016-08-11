@@ -43,11 +43,19 @@ public class CharacterController : MonoBehaviour
 
         if (move.x == 1 && move.y == 1)
         {
-            rot = new Vector3(0, 0, 315);
+            rot = new Vector3(0, 0, 45);
         }
         else if (move.x == -1 && move.y == 1)
         {
+            rot = new Vector3(0, 0, 315);
+        }
+        else if (move.x == 1 && move.y == -1)
+        {
             rot = new Vector3(0, 0, 45);
+        }
+        else if (move.x == -1 && move.y == -1)
+        {
+            rot = new Vector3(0, 0, 315);
         }
         else if(Mathf.Abs(move.x) == 1)
         {
