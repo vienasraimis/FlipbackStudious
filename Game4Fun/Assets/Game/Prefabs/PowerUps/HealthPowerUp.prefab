@@ -70,6 +70,8 @@ MonoBehaviour:
   Health: 10
   Speed: 0
   SpeedTime: 0
+  powerUpParticleEffect: {fileID: 1000010276538270, guid: 55b539a43ab254344a1ba59d673c895b,
+    type: 2}
 --- !u!212 &212000010844617634
 SpriteRenderer:
   m_ObjectHideFlags: 1
