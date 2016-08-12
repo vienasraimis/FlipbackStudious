@@ -35,8 +35,6 @@ public class GameManager : MonoBehaviour
         coins = PlayerPrefs.GetFloat("Coins");
 
         SceneManager.sceneLoaded += SceneManager_sceneLoaded;
-
-        SceneManager.LoadScene(1);
     }
 
     private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode mode)
