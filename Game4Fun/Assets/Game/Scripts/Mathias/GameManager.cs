@@ -87,9 +87,22 @@ public class GameManager : MonoBehaviour
 
     public Level GetCurrentLevel()
     {
-        foreach (var lvl in GameManager.singleton.GetLevels())
+        foreach (var lvl in levels)
         {
             if (lvl.index + 1 == SceneIndex)
+            {
+                return lvl;
+            }
+        }
+
+        return new Level();
+    }
+
+    public Level GetLevelByName(string name)
+    {
+        foreach (var lvl in levels)
+        {
+            if (lvl.SceneName == name)
             {
                 return lvl;
             }
