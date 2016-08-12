@@ -2773,7 +2773,7 @@ Prefab:
         type: 2}
       propertyPath: ui.stepbar
       value: 
-      objectReference: {fileID: 129008622}
+      objectReference: {fileID: 1117382029}
     - target: {fileID: 114000011818155342, guid: 858ccb91fe4f3496488e2d8fe294abad,
         type: 2}
       propertyPath: ui.OverLap
@@ -2837,7 +2837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: Level02
-  time: 3.5
+  TimeBar: {fileID: 129008622}
+  time: 5
 --- !u!1 &769474381
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,9 +3158,25 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224000013909741464, guid: 122caa9bd8299e64084f2bf061ce5ba1,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000013909741464, guid: 122caa9bd8299e64084f2bf061ce5ba1,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 122caa9bd8299e64084f2bf061ce5ba1, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1117382029 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000010563922184, guid: 122caa9bd8299e64084f2bf061ce5ba1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117382028}
+  m_Script: {fileID: -113659843, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1 &1132664015
 GameObject:
   m_ObjectHideFlags: 0
