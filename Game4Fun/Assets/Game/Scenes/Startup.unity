@@ -566,7 +566,8 @@ CanvasRenderer:
 --- !u!1 &275274170
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 1000013545755824, guid: be485f130c244a24181968099c8cd518,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
@@ -583,7 +584,8 @@ GameObject:
 --- !u!114 &275274171
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 114000010572597698, guid: be485f130c244a24181968099c8cd518,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275274170}
   m_Enabled: 1
@@ -601,7 +603,8 @@ MonoBehaviour:
 --- !u!114 &275274172
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 114000013668499592, guid: be485f130c244a24181968099c8cd518,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275274170}
   m_Enabled: 1
@@ -615,15 +618,16 @@ MonoBehaviour:
 --- !u!4 &275274173
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_PrefabParentObject: {fileID: 4000010626906334, guid: be485f130c244a24181968099c8cd518,
+    type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275274170}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1523946289}
   m_RootOrder: 1
 --- !u!1 &327339353
 GameObject:
@@ -2927,9 +2931,10 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1006404231}
+  - {fileID: 275274173}
   - {fileID: 1725261997}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &1579030752
 GameObject:
   m_ObjectHideFlags: 0
@@ -3320,7 +3325,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1523946289}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!82 &1725261998
 AudioSource:
   m_ObjectHideFlags: 0

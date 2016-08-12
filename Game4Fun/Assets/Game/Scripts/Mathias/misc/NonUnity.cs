@@ -62,4 +62,16 @@ public class LevelBuilder
 
         return levels;
     }
+
+    public void Save(List<Level> levels)
+    {
+        string buildString = "";
+        foreach (var lvl in levels)
+        {
+            buildString = lvl.SceneName + "|";
+        }
+
+        PlayerPrefs.SetString("UnlockedLevels", buildString);
+        PlayerPrefs.Save();
+    }
 }

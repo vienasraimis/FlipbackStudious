@@ -11,6 +11,8 @@ public class PortalSwitchScene : MonoBehaviour {
 	{
 		if(other.gameObject.tag == "Player")
 		{
+            var lvl = GameManager.singleton.GetCurrentLevel();
+
 			SceneManager.LoadScene(levelToLoad);
 		}
 	}
