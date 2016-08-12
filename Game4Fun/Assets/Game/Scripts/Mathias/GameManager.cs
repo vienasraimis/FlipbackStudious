@@ -1,16 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
     public float coins = 0f;
     public float volume = 1f;
+
     public int SceneIndex = 0;
+
+    public LevelBuilder lvlBuilder;
+
+    private List<Level> levels;
 
     void Awake()
     {
         DontDestroyOnLoad(gameObject);
+
+        levels = lvlBuilder.Build();
 
         if (PlayerPrefs.GetInt("FirstRun") == 0)
         {
@@ -51,6 +59,21 @@ public class GameManager : MonoBehaviour
     public void ReloadScene()
     {
         SceneManager.LoadScene(SceneIndex);
+    }
+
+    public List<Level> GetUnlockedLevels()
+    {
+        List<Level> un = new List<Level>();
+
+        foreach (var Level in levels)
+        {
+            if (Level.unlocked)
+            {
+                un.Add(Level);
+            }
+        }
+
+        return un;
     }
 
 }
