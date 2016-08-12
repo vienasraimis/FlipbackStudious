@@ -14,12 +14,16 @@ public class CharacterController : MonoBehaviour
     private bool doMove = true;
     private bool disabled = false;
 
+    private Vector3 prev;
+
     void Start()
     {
         rigi = GetComponent<Rigidbody2D>();
         status = GetComponent<CharacterStatus>();
 
         rigi.freezeRotation = true;
+
+        prev = transform.position;
     }
 
     void FixedUpdate()
@@ -30,10 +34,11 @@ public class CharacterController : MonoBehaviour
 
         Rotate(new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")));
 
-        var prev = transform.position;
         rigi.MovePosition(transform.position + movement);
 
-        if (doMove) status.Step(movement / (Speed));
+        if (doMove || transform.position != prev) status.Step(movement / (Speed));
+
+        prev = transform.position;
     }
 
 
