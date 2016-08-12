@@ -75,6 +75,7 @@
     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Spikes.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
+    <Compile Include="Assets\Game\Scripts\Mathias\LevelSelect\LevelButton.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\PowerUps\Powerup.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\Shop&amp;Inventory\Item.cs" />
     <Compile Include="Assets\Game\Scripts\Mathias\Shop&amp;Inventory\Shop.cs" />

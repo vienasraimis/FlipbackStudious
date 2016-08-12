@@ -5,6 +5,8 @@ using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager singleton;
+
     public float coins = 0f;
     public float volume = 1f;
 
@@ -16,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        singleton = this;
+
         DontDestroyOnLoad(gameObject);
 
         levels = lvlBuilder.Build();
