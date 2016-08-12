@@ -63,6 +63,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneIndex);
     }
 
+    #region Levels
+
     public List<Level> GetUnlockedLevels()
     {
         List<Level> un = new List<Level>();
@@ -77,5 +79,44 @@ public class GameManager : MonoBehaviour
 
         return un;
     }
+
+    public List<Level> GetLevels()
+    {
+        return levels;
+    }
+
+    public Level GetCurrentLevel()
+    {
+        foreach (var lvl in levels)
+        {
+            if (lvl.index + 1 == SceneIndex)
+            {
+                return lvl;
+            }
+        }
+
+        return new Level();
+    }
+
+    public Level GetLevelByName(string name)
+    {
+        foreach (var lvl in levels)
+        {
+            if (lvl.SceneName == name)
+            {
+                return lvl;
+            }
+        }
+
+        return new Level();
+    }
+
+    public void UnlockLevel(Level lvl)
+    {
+        levels[lvl.index].unlocked = true;
+
+        lvlBuilder.Save(levels);
+    }
+    #endregion
 
 }
