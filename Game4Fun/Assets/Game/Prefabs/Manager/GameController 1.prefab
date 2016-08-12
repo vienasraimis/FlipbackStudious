@@ -651,7 +651,6 @@ GameObject:
   - 222: {fileID: 222000012523922744}
   - 114: {fileID: 114000010399003870}
   - 114: {fileID: 114000012985298352}
-  - 114: {fileID: 114000012431597972}
   m_Layer: 5
   m_Name: LevelSelect
   m_TagString: Untagged
@@ -2050,17 +2049,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114000012431597972
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000013646367444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114000012532129574
 MonoBehaviour:
   m_ObjectHideFlags: 1
