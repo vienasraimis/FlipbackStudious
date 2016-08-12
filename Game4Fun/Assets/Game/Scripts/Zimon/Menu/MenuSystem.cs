@@ -7,6 +7,8 @@ public class MenuSystem : MonoBehaviour {
 
 	void Start () 
 	{
+        DontDestroyOnLoad(gameObject);
+
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 	}
