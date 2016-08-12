@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class MenuSystem : MonoBehaviour {
 
@@ -10,8 +11,8 @@ public class MenuSystem : MonoBehaviour {
 
 	void Start () 
 	{
-		Cursor.lockState = CursorLockMode.Locked;
-		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.None;
+		Cursor.visible = true;
 	}
 	
 	void Update () 
@@ -32,10 +33,6 @@ public class MenuSystem : MonoBehaviour {
 				Cursor.lockState = CursorLockMode.None;
 				Cursor.visible = true;
 				Time.timeScale = 0;
-
-				//Inactive
-				levelSelectMenu.gameObject.SetActive(false);
-				creditsMenu.gameObject.SetActive(false);
 			}
 			else
 			{
@@ -45,6 +42,8 @@ public class MenuSystem : MonoBehaviour {
 				Cursor.visible = false;
 				Time.timeScale = 1;
 			}
+
+			SceneManager.LoadScene("Level01");
 	}
 
 	public void LevelSelect(bool OpenMenu)
