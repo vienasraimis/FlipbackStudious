@@ -5,15 +5,8 @@ public class MenuSystem : MonoBehaviour {
 
 	public Transform menuCanvas;
 
-    void Awake()
-    {
-        DontDestroyOnLoad(menuCanvas);
-    }
-
 	void Start () 
 	{
-        
-
 		Cursor.lockState = CursorLockMode.Locked;
 		Cursor.visible = false;
 	}
