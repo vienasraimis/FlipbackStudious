@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{D170EE2B-F986-1757-B4A5-0C70CA90E017}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -46,27 +45,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Game\Scripts\Mathias\Character\CharacterController.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\Character\CharacterStatus.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Bumper.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\Enemy\EnemyMovement.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Spikes.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\PowerUps\Powerup.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\Shop&amp;Inventory\Item.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\Shop&amp;Inventory\Shop.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\misc\GameOver.cs" />
-    <Compile Include="Assets\Game\Scripts\Mathias\misc\GameOverCanvas.cs" />
-    <Compile Include="Assets\Game\Scripts\Raimundas\CharacterRotation.cs" />
-    <Compile Include="Assets\Game\Scripts\Zimon\Level\PortalSwitchScene.cs" />
-    <Compile Include="Assets\Game\Scripts\Zimon\Level\TimeLeft.cs" />
-    <Compile Include="Assets\Game\Scripts\Zimon\Menu\MenuSystem.cs" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
-    </Reference>
+     <Compile Include="Assets\Game\Scripts\Mathias\Character\CharacterController.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\Character\CharacterStatus.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Bumper.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\EnemyMovement.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\Enemy\Spikes.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\GameManager.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\PowerUps\Powerup.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\Shop&amp;Inventory\Item.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\Shop&amp;Inventory\Shop.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\misc\GameOver.cs" />
+     <Compile Include="Assets\Game\Scripts\Mathias\misc\GameOverCanvas.cs" />
+     <Compile Include="Assets\Game\Scripts\Raimundas\CharacterRotation.cs" />
+     <Compile Include="Assets\Game\Scripts\Zimon\Level\PortalSwitchScene.cs" />
+     <Compile Include="Assets\Game\Scripts\Zimon\Level\TimeLeft.cs" />
+     <Compile Include="Assets\Game\Scripts\Zimon\Menu\MenuSystem.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/opt/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -76,4 +75,5 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  
 </Project>
