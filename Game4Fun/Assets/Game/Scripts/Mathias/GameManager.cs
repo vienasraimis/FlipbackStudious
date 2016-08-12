@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public float coins = 0f;
     public float volume = 1f;
     public int SceneIndex = 0;
 
@@ -15,12 +16,15 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("FirstRun", 1);
             PlayerPrefs.SetFloat("Volume", 1f);
+            PlayerPrefs.SetFloat("Coins", 0f);
 
             PlayerPrefs.Save();
         }
 
         volume = PlayerPrefs.GetFloat("Volume");
         ChangeVolume();
+
+        coins = PlayerPrefs.GetFloat("Coins");
 
         SceneManager.sceneLoaded += SceneManager_sceneLoaded;
 
@@ -47,8 +51,6 @@ public class GameManager : MonoBehaviour
     public void ReloadScene()
     {
         SceneManager.LoadScene(SceneIndex);
-        
-
     }
 
 }

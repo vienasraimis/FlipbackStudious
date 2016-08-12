@@ -3,7 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class TimeLeft : MonoBehaviour {
+public class TimeLeft : MonoBehaviour
+{
 
 	[SerializeField]
 	private string levelToLoad;
@@ -12,6 +13,7 @@ public class TimeLeft : MonoBehaviour {
     private Slider TimeBar;
 
 	public float time;
+    private bool over = false;
 
     void Start()
     {
@@ -25,10 +27,12 @@ public class TimeLeft : MonoBehaviour {
         TimeBar.value = time;
 
 
-		if(time <= 0f)
+		if(time <= 0f && !over)
 		{
-            var over = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameOver>();
-            over.Gameover();
+            over = true;
+            var gover = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameOver>();
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterController>().enabled = false;
+            gover.Gameover();
         }
 	}
 }
