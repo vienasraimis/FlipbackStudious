@@ -26,7 +26,6 @@ public class TimeLeft : MonoBehaviour
 		time -= Time.fixedDeltaTime;
         TimeBar.value = time;
 
-
 		if(time <= 0f && !over)
 		{
             over = true;
