@@ -33,12 +33,12 @@ public class CharacterController : MonoBehaviour
     }
 
 
-
+    Vector3 lastRot = new Vector3(0, 0, 0);
     private void Rotate(Vector3 move)
     {
         //move must be in Absolute values !!
 
-        Vector3 rot = new Vector3(0,0,0);
+        Vector3 rot = lastRot;
         Vector3 camRot = new Vector3(0, 0, 0);
 
         if (move.x == 1 && move.y == 1)
@@ -65,6 +65,8 @@ public class CharacterController : MonoBehaviour
         {
             rot = new Vector3(0, 0, 0);
         }
+
+        lastRot = rot;
 
         transform.rotation = Quaternion.Euler(rot);
         camera.rotation = Quaternion.Euler(camRot);
