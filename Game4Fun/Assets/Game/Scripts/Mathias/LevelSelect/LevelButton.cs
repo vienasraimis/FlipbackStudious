@@ -27,6 +27,7 @@ public class LevelButton : MonoBehaviour
     public void LoadLevel()
     {
         transform.parent.parent.parent.GetComponent<MenuSystem>().PausedGame();
+        transform.parent.parent.parent.GetComponent<MenuSystem>().LevelSelect(false);
         SceneManager.LoadScene(Level);
     }
 }
