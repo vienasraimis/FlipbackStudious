@@ -27,6 +27,17 @@ public class CharacterStatus : MonoBehaviour
     {
         ui.Awake();
     }
+
+    void Update()
+    {
+        if(ui.stepbar.value <= 0 && GetComponent<CharacterController>().enabled)
+        {
+            GetComponent<CharacterController>().enabled = false;
+
+            var over = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameOver>();
+            over.Gameover();
+        }
+    }
 }
 
 [System.Serializable]

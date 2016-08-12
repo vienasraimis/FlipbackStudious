@@ -37,12 +37,18 @@ public class GameManager : MonoBehaviour
 
     public void ChangeVolume()
     {
-
         var allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
         foreach (var au in allAudioSources)
         {
             au.volume = volume;
         }
+    }
+
+    public void ReloadScene()
+    {
+        SceneManager.LoadScene(SceneIndex);
+        
+
     }
 
 }

@@ -10,7 +10,9 @@ public class CharacterController : MonoBehaviour
     private Rigidbody2D rigi;
     private CharacterStatus status;
 
+
     private bool doMove = true;
+    private bool disabled = false;
 
     void Start()
     {
@@ -22,6 +24,8 @@ public class CharacterController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (disabled) return;
+
         Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * Time.fixedDeltaTime * Speed;
 
         Rotate(new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")));
@@ -71,7 +75,6 @@ public class CharacterController : MonoBehaviour
         transform.rotation = Quaternion.Euler(rot);
         camera.rotation = Quaternion.Euler(camRot);
     }
-
 
 
     void OnCollisionEnter2D(Collision2D coll)

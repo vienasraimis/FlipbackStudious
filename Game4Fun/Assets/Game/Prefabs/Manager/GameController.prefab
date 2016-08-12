@@ -36,6 +36,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000014042215146}
   - 114: {fileID: 114000011626676520}
+  - 114: {fileID: 114000010011219892}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -63,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013578713080}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 412.27545, y: 245.41832, z: 9.791435}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -78,7 +79,8 @@ AudioSource:
   m_GameObject: {fileID: 1000012367862724}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243000013182378408, guid: 8acbc52da59b46f4cb2d6eff7ce41132,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: c4c7a626459104b9c844721fd8ce7504, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -144,6 +146,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114000010011219892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013578713080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88875d62c41d94b4b90686c9b391ba07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameOverCanvas: {fileID: 1000011043849028, guid: 044cdb1b65b613848a4dc80189bb8339,
+    type: 2}
 --- !u!114 &114000011626676520
 MonoBehaviour:
   m_ObjectHideFlags: 1
