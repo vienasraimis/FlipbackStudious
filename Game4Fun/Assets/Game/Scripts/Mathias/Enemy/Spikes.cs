@@ -46,7 +46,7 @@ public class Spikes : MonoBehaviour
 
         if (active && ApplyDamage && !damageApplied)
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterStatus>().AddHealth(-10f);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterStatus>().AddHealth(-25f);
 
             damageApplied = true;
         }

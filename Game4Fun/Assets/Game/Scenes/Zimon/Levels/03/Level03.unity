@@ -299,7 +299,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 271330359}
-  - 114: {fileID: 271330358}
   - 114: {fileID: 271330360}
   m_Layer: 0
   m_Name: _GAMEMANAGER
@@ -308,21 +307,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &271330358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 271330357}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25888e8b4378c44ab93ef14a156f1f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  menuCanvas: {fileID: 0}
-  mainMenu: {fileID: 0}
-  levelSelectMenu: {fileID: 0}
-  creditsMenu: {fileID: 0}
 --- !u!4 &271330359
 Transform:
   m_ObjectHideFlags: 0
@@ -349,7 +333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelToLoad: Level03
   TimeBar: {fileID: 721641355}
-  time: 5
+  time: 3.5
 --- !u!4 &282107726 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000011409444596, guid: 12a725b09f941a5439f0deac284ed0b7,
@@ -939,6 +923,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 754890451}
   - 61: {fileID: 754890449}
+  - 114: {fileID: 754890450}
   m_Layer: 0
   m_Name: EndPortal
   m_TagString: Untagged
@@ -960,6 +945,18 @@ BoxCollider2D:
   m_Offset: {x: -0.00000020861626, y: 0.03264761}
   serializedVersion: 2
   m_Size: {x: 2, y: 0.5429373}
+--- !u!114 &754890450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754890448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bd21cbf8b644a7fbb49de34e0edcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Level04
 --- !u!4 &754890451
 Transform:
   m_ObjectHideFlags: 0

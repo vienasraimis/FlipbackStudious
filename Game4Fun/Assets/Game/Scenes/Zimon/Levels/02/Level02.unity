@@ -2495,7 +2495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelToLoad: Level02
   TimeBar: {fileID: 1184117373}
-  time: 5
+  time: 4
 --- !u!1 &769474381
 GameObject:
   m_ObjectHideFlags: 0

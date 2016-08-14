@@ -4222,6 +4222,7 @@ GameObject:
   - 4: {fileID: 1373943731}
   - 114: {fileID: 1373943730}
   - 61: {fileID: 1373943729}
+  - 114: {fileID: 1373943732}
   m_Layer: 0
   m_Name: EndPortal
   m_TagString: Untagged
@@ -4269,6 +4270,18 @@ Transform:
   - {fileID: 53469744}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1373943732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1373943728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8bd21cbf8b644a7fbb49de34e0edcfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Level05
 --- !u!1001 &1496358599
 Prefab:
   m_ObjectHideFlags: 0

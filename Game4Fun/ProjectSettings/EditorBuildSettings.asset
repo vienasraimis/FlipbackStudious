@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Game/Scenes/Zimon/Levels/02/Level02.unity
   - enabled: 1
     path: Assets/Game/Scenes/Zimon/Levels/03/Level03.unity
+  - enabled: 1
+    path: Assets/Game/Scenes/Zimon/Levels/04/Level04.unity
